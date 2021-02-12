@@ -13,7 +13,7 @@ spec:
     metadata:
       labels:
         app: alpine
-        io.kompose.service: alpine
+        
     spec:
       containers:
       - name: alpine

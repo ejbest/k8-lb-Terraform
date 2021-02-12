@@ -86,7 +86,11 @@ In an effort to differentiate my approach and showcase how I become a valuable m
 9. Two methods to scale up and down<br>
 Command line 
 <pre>
+    to Scale by number of replicas 
     kubectl scale deployment.apps/alpine --replicas=6 -n tempnamespace2
+    
+    to Scale based on cpu 50%
+    kubectl autoscale deployment alpine-deployment --cpu-percent=50 --min=1 --max=10
 </pre>
 You can also edit "replicas" in alpine-deployment.yaml choosing the desired numbers.  Invoke by: 
 <pre>
