@@ -1,7 +1,7 @@
 variable "aws_region" {
-  default = "us-east-1"
-  access_key = "my-access-key"
-  secret_key = "my-secret-key"
+  default    = "us-east-1"
+  access_key = "var.access_key"
+  secret_key = "var.secret_key"
 }
 
 variable "cluster-name" {
